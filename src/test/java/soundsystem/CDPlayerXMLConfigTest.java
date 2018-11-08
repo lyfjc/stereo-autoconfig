@@ -34,6 +34,7 @@ public class CDPlayerXMLConfigTest {
     assertEquals(
         "Playing Sgt. Pepper's Lonely Hearts Club Band by The Beatles\r\n",
         log.getLog());
+    //在windows系统中是\r\n
   }
 
 }

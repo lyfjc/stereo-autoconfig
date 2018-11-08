@@ -16,7 +16,7 @@ public class CDPlayerTest {
 
   @Rule
   public final StandardOutputStreamLog log = new StandardOutputStreamLog();
-
+ //用来断言SgtPeppers.play()方法的输出发送到了控制台
   @Autowired
   private MediaPlayer player;
   
@@ -34,6 +34,7 @@ public class CDPlayerTest {
     assertEquals(
         "Playing Sgt. Pepper's Lonely Hearts Club Band by The Beatles\r\n",
         log.getLog());
+    //在windows系统中是\r\n
   }
 
 }
